@@ -1,0 +1,25 @@
+# Computer Vision Object Detection - dependencies
+# Install with: pip install -r requirements.txt
+#
+# Note: ultralytics installs PyTorch automatically (CPU build by default).
+# For GPU support, install the CUDA build of PyTorch first. See docs/setup_guide.md.
+
+# --- Detection -------------------------------------------------------------
+ultralytics>=8.3.0
+
+# --- Image / video handling ------------------------------------------------
+opencv-python>=4.9.0
+numpy>=1.26.0
+Pillow>=10.0.0
+
+# --- Data handling ---------------------------------------------------------
+pandas>=2.1.0
+
+# --- Web app ---------------------------------------------------------------
+streamlit>=1.40.0
+
+# --- Configuration ---------------------------------------------------------
+python-dotenv>=1.0.0
+
+# --- Testing ---------------------------------------------------------------
+pytest>=8.0.0
