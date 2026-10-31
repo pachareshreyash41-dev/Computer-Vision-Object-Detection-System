@@ -37,30 +37,39 @@ local copy. A typical layout is:
 
 ``` text
 Computer-Vision-Object-Detection/
+│
 ├── app.py
 ├── requirements.txt
-├── .env.example
+├── README.md
 ├── .gitignore
+├── .env.example
+│
 ├── models/
-│   └── yolov8n.pt
+│   └── .gitkeep
+│
+├── data/
+│   ├── input/
+│   │   └── .gitkeep
+│   └── output/
+│       └── .gitkeep
+│
 ├── src/
+│   ├── __init__.py
 │   ├── detector.py
 │   ├── image_processor.py
-│   └── ...
-├── data/
-├── outputs/
-└── README.md
+│   ├── video_processor.py
+│   └── utils.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_detector.py
+│   └── test_utils.py
+│
+└── docs/
+    ├── architecture.md
+    ├── setup_guide.md
+    └── model_evaluation.md
 ```
-
--   `app.py` --- starts the Streamlit application.
--   `src/detector.py` --- loads the YOLO model and performs detection.
--   `src/image_processor.py` --- prepares images and returns annotated
-    results.
--   `models/` --- stores model weights, if the project is configured to
-    load them locally.
--   `outputs/` --- can be used for generated results, depending on the
-    project configuration.
--   `requirements.txt` --- lists the Python dependencies.
 
 ## Requirements
 
